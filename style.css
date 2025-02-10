@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1A3A4A; /* Dark blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chat-container {
+    width: 900px;  /* Adjust width here */
+    height: 700px; /* Adjust height here */
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+/* Header */
+.chat-header {
+    background: #009B07; /* Green header */
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Bot Icon */
+.bot-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Bot Name and Status */
+.bot-info {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    line-height: 1.2;
+}
+
+.bot-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bot-status {
+    font-size: 14px;
+    color: black;
+}
+
+/* Chat box */
+.chat-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 15px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Speech bubbles */
+.chat-message {
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #3FA9F5;
+    color: white;
+    border-radius: 15px 15px 0 15px;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #EAEAEA;
+    color: black;
+    border-radius: 15px 15px 15px 0;
+}
+
+/* Input section */
+.input-container {
+    display: flex;
+    background: #948C81; /* Brown input bar */
+    padding: 12px;
+    align-items: center;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: black;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: blue;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #007bff;
+}
